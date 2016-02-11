@@ -1,5 +1,17 @@
 $(document).ready(function(){
-	for(var i = 1; i <= 100 ; i++){
+	$('input').on('click', function(){
+		$('input').val('');
+	})
+	$('#submit').on('click', function(){
+			var yourNumber = parseInt($('input').val());
+			fizzbuzz(yourNumber);
+	});
+	$('#clear').on('click', function(){
+		location.reload(true);
+	});
+	
+function fizzbuzz(topNumber){
+for(var i = 1; i <= topNumber ; i++){
 		var mod3 = i%3;
 		var mod5 = i%5;
 		if(mod3==0){
@@ -17,4 +29,7 @@ $(document).ready(function(){
 			$('body').append("<p>" + i + "</p>");
 		}
 	}
+}
+
 });
+

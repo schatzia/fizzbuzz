@@ -1,0 +1,39 @@
+input{
+	width: 400px;
+	height: 30px;
+	background-color: #CC917B;
+	border: 1px #CC917B solid;
+}
+input, button{		
+	border-radius: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #dadada;
+}
+input:focus, button:focus{
+	outline: 0;
+}
+
+p{
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 12px;
+}
+button{
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	width: 150px;
+	height: 30px;
+	background-color: #FFAD74;
+	border: 1px #FFAD74 solid; 
+	color: #5a5a5a;
+}
+button:hover{
+	cursor: pointer;
+}
+.top{
+	margin: 5px auto;
+	display: block;
+	text-align: center;
+}
